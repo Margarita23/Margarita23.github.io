@@ -15,22 +15,65 @@
             <div class="logo__image-container"><img class="logo__image" src="../images/logo.png" alt="Логитип компании Colaees CLINIC"/></div>
             <p class="logo__text">клиника медицинской косметологии</p>
           </div>
-          <div class="menu__container">
+          <div class="menu__container" id="hover-menu">
+            <div class="menu__cancel menu__cancel--hidden" id="menu__cancel"></div>
             <ul class="menu__list">
-              <li class="menu__item">О клинике</li>
-              <li class="menu__item">Что мы лечим</li>
-              <li class="menu__item">Услуги
-                <div class="second-menu__container"><svg xmlns="http://www.w3.org/2000/svg" width="30px" height="6px" viewBox="0 0 50 50" fill='#d7e9cd' class="menu__svg-triangle" preserveAspectRatio="none">
-<polygon points="0,50 50,50 25,0"></polygon>
-</svg>
-                  <ul class="second-menu__list">
-                    <li class="second-menu__item"> <a class="second-menu__link" href="#">Дерматология</a></li>
+              <li class="menu__item"><a class="menu__link" href="https://www.google.com.ua/">О клинике</a></li>
+              <li class="menu__item"><a class="menu__link" href="#">Что мы лечим</a></li>
+              <li class="menu__item menu__item--submenu"><a class="menu__link" href="#">Услуги</a>
+                <div class="second-menu__container">
+                  <svg class="menu__svg-triangle" xmlns="http://www.w3.org/2000/svg" width="30px" height="6px" viewBox="0 0 50 50" fill="#d7e9cd" preserveAspectRatio="none">
+                    <polygon points="0,50 50,50 25,0"></polygon>
+                  </svg>
+                  <ul class="second-menu__list" id="second-menu__list">
+                    <li class="second-menu__item"><a class="second-menu__link" href="https://www.google.com.ua/?hl=ru">Дерматология</a></li>
                     <li class="second-menu__item"><a class="second-menu__link" href="#">Дерматоонкология</a>
-                      <div class="shape-icon__container"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 10 16" fill="#a9ce9a" width="10" height="16">
-<path id="Shape 26 copy 17" class="shp0" d="M1.78 14.16L1.27 13.65L7.24 7.69L1.12 1.57L1.63 1.07L8.25 7.69L1.78 14.16Z" />
-</svg>
+                      <div class="shape-icon__container">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 10 16" fill="#a9ce9a" width="10" height="16">
+                          <path class="shp0" id="Shape 26 copy 17" d="M1.78 14.16L1.27 13.65L7.24 7.69L1.12 1.57L1.63 1.07L8.25 7.69L1.78 14.16Z"></path>
+                        </svg>
+                      </div>
+                      <ul class="third-menu__list" id="third-menu__list">
+                        <li class="third-menu__item"> <a href="https://www.google.com.ua/?hl=ru">Гемангиома лечение</a></li>
+                        <li class="third-menu__item"><a href="https://www.google.com.ua/?hl=ru">Лечение базалиом</a></li>
+                        <li class="third-menu__item"><a href="#">Диагностика меланом</a></li>
+                        <li class="third-menu__item"><a href="#">Лечение ксантелазм (ксантом)</a></li>
+                      </ul>
+                    </li>
+                    <li class="second-menu__item"><a class="second-menu__link" href="#">Медицинская Косметология</a>
+                      <div class="shape-icon__container">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 10 16" fill="#a9ce9a" width="10" height="16">
+                          <path class="shp0" id="Shape 26 copy 17" d="M1.78 14.16L1.27 13.65L7.24 7.69L1.12 1.57L1.63 1.07L8.25 7.69L1.78 14.16Z"></path>
+                        </svg>
                       </div>
                       <ul class="third-menu__list">
+                        <li class="third-menu__item"> <a href="https://www.google.com.ua/">Губы</a></li>
+                        <li class="third-menu__item"><a href="https://www.google.com.ua/">Глаза</a></li>
+                        <li class="third-menu__item"><a href="#">Щеки</a></li>
+                        <li class="third-menu__item"><a href="#">Подбородок</a></li>
+                      </ul>
+                    </li>
+                    <li class="second-menu__item"><a class="second-menu__link" href="#">Венерология                  </a></li>
+                    <li class="second-menu__item"><a class="second-menu__link" href="#">Трихология                          </a></li>
+                    <li class="second-menu__item"><a class="second-menu__link" href="#">Онихология                         </a></li>
+                    <li class="second-menu__item"><a class="second-menu__link" href="#">Урология</a></li>
+                  </ul>
+                </div>
+              </li>
+              <li class="menu__item menu__item--submenu"><a class="menu__link" href="#">Цены на услуги</a>
+                <div class="second-menu__container">
+                  <svg class="menu__svg-triangle" xmlns="http://www.w3.org/2000/svg" width="30px" height="6px" viewBox="0 0 50 50" fill="#d7e9cd" preserveAspectRatio="none">
+                    <polygon points="0,50 50,50 25,0"></polygon>
+                  </svg>
+                  <ul class="second-menu__list" id="second-menu__list">
+                    <li class="second-menu__item"> <a class="second-menu__link" href="#">Дерматология</a></li>
+                    <li class="second-menu__item"><a class="second-menu__link" href="#">Дерматоонкология</a>
+                      <div class="shape-icon__container">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 10 16" fill="#a9ce9a" width="10" height="16">
+                          <path class="shp0" id="Shape 26 copy 17" d="M1.78 14.16L1.27 13.65L7.24 7.69L1.12 1.57L1.63 1.07L8.25 7.69L1.78 14.16Z"></path>
+                        </svg>
+                      </div>
+                      <ul class="third-menu__list" id="third-menu__list">
                         <li class="third-menu__item"> <a href="#">Гемангиома лечение</a></li>
                         <li class="third-menu__item"><a href="#">Лечение базалиом</a></li>
                         <li class="third-menu__item"><a href="#">Диагностика меланом</a></li>
@@ -38,9 +81,10 @@
                       </ul>
                     </li>
                     <li class="second-menu__item"><a class="second-menu__link" href="#">Медицинская Косметология</a>
-                      <div class="shape-icon__container"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 10 16" fill="#a9ce9a" width="10" height="16">
-<path id="Shape 26 copy 17" class="shp0" d="M1.78 14.16L1.27 13.65L7.24 7.69L1.12 1.57L1.63 1.07L8.25 7.69L1.78 14.16Z" />
-</svg>
+                      <div class="shape-icon__container">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 10 16" fill="#a9ce9a" width="10" height="16">
+                          <path class="shp0" id="Shape 26 copy 17" d="M1.78 14.16L1.27 13.65L7.24 7.69L1.12 1.57L1.63 1.07L8.25 7.69L1.78 14.16Z"></path>
+                        </svg>
                       </div>
                       <ul class="third-menu__list">
                         <li class="third-menu__item"> <a href="#">Губы</a></li>
@@ -56,12 +100,12 @@
                   </ul>
                 </div>
               </li>
-              <li class="menu__item">Цены на услуги</li>
-              <li class="menu__item">Доктора</li>
-              <li class="menu__item">Контакты</li>
+              <li class="menu__item"><a class="menu__link" href="#">Доктора</a></li>
+              <li class="menu__item"><a class="menu__link" href="#">Контакты</a></li>
             </ul>
           </div>
           <div class="contacts__container">
+            <div class="menu__container--little" id="menu__container--little"></div>
             <p class="contacts__text">Свяжитесь с нами</p><a class="contacts__phone" href="tel:+380675800537">+380 67 580 05 37</a>
           </div>
         </div>
@@ -103,6 +147,11 @@
                 <div class="banner__image-container"><img class="banner__image" src="./images/girl.png" alt="Картинка-баннер"/></div>
               </div>
             </li>
+          </ul>
+          <ul class="banner__list-control">
+            <li class="banner__item-control banner__item-control--active"></li>
+            <li class="banner__item-control"></li>
+            <li class="banner__item-control"></li>
           </ul>
           <div class="banner__info">
             <h3 class="info__title">Здравствуйте, ищите профессиональный подход? </h3>
