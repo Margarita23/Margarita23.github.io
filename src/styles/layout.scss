@@ -1,8 +1,9 @@
 html, body {
     margin: 0px;
     padding: 0px;
-    height: 100%;
-    width: 100%;
+    width: 100vw;
+    height: 100vh;
+    font-size: 14px;
 }
 
 * {
@@ -22,6 +23,7 @@ a {
 
 ul {
     padding: 0px;
+    margin: 0px;
 }
 
 li {

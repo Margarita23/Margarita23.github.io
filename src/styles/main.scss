@@ -3,7 +3,124 @@
 
 @import './layout.scss';
 @import './base.scss';
-@import './pages/index.scss';
 
 @import './blocks/header.scss';
 @import './blocks/banner.scss';
+
+@import'./blocks/hover-menu.scss';
+
+
+@media only screen and (max-width: 992px){
+    html {
+        font-size: 11px;
+    }
+
+    .container {
+        max-width: 900px;
+    }
+
+    .menu__item {
+        margin-right: 20px;
+    }
+
+}
+
+@media only screen and (max-width: 768px) {
+    html {
+        font-size: 10px;
+    }
+
+    .header {
+        padding-top: 15px;
+    }
+
+    .container {
+        max-width: 700px;
+    }
+
+    .menu__item {
+        margin-right: 10px;
+    }
+
+    .menu__container {
+        padding: 0px 5px;
+    }
+
+    .contacts__phone {
+        font-size: 1.1rem;
+    }
+
+    .info__title {
+        padding-bottom: 20px;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .logo {
+        width: 45%;
+    }
+
+    .menu__container {
+        display: none;
+    }
+
+    .menu__container--little {
+        display: inline-block;
+    }
+
+    .contacts__phone {
+        line-height: 1rem;
+    }
+    
+    .contacts__container {
+        width: auto;
+    }
+
+    .banner__image-container {
+        display: none;
+    }
+
+    .main-phrase__container {
+        width: 60%;
+        min-width: auto;
+        margin: 0px auto;
+    }
+
+    .banner__visual {
+        margin-bottom: 0px;
+        position: static;
+    }
+
+    .main-phrase__title {
+        margin-bottom: 0px;
+    }
+
+    .banner__list-control {
+        margin: 30px 0px 20px 6%;
+    }
+
+    .banner__visual:before {
+        max-width: 250px;
+        max-height: 250px;
+        width: 250px;
+        height: 250px;
+        position: absolute;
+        background-image: url(../images/lotos.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        top: 30%;
+        left: 15%;
+        z-index:-1;
+    }
+}
+
+@media only screen and (max-width: 325px) {
+    .discount {
+        font-size: 4.5rem;
+    }
+
+    .info__title {
+        padding-bottom: 10px;
+    }
+}

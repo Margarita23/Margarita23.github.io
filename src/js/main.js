@@ -1,3 +1,5 @@
+import $ from "jquery";
+
 let multiItemSlider = (function () {
     return function () {
         let
@@ -7,9 +9,12 @@ let multiItemSlider = (function () {
             _wrapperWidth = parseFloat(getComputedStyle(_sliderWrapper).width),
             _itemWidth = parseFloat(getComputedStyle(_sliderItems[0]).width),
             _positionLeftItem = 0,
+            _positionLeftItemControls = 0,
             _transform = 0,
             _step = _itemWidth / _wrapperWidth * 100,
-            _items = [];
+            _items = [],
+            controlItems =  _mainElement.querySelectorAll('.banner__item-control');
+
 
         _sliderItems.forEach(function (item, index) {
             _items.push({ item: item, position: index, transform: 0 });
@@ -45,6 +50,17 @@ let multiItemSlider = (function () {
         let _transformItem = function () {
             let nextItem;
             _positionLeftItem++;
+            _positionLeftItemControls++;
+
+            if(_positionLeftItemControls > 2){
+                _positionLeftItemControls = 0;
+                controlItems[2].className = 'banner__item-control';
+            } else if(_positionLeftItemControls !== 0) {
+                controlItems[_positionLeftItemControls-1].className = 'banner__item-control';
+            }
+
+            controlItems[_positionLeftItemControls].className = 'banner__item-control banner__item-control--active';
+            
             if ((_positionLeftItem + _wrapperWidth / _itemWidth - 1) > position.getMax()) {
                 nextItem = position.getItemMin();
                 _items[nextItem].position = position.getMax() + 1;
@@ -52,12 +68,29 @@ let multiItemSlider = (function () {
                 _items[nextItem].item.style.transform = 'translateX(' + _items[nextItem].transform + '%)';
             }
             _transform -= _step;
-        
-             _sliderWrapper.style.transform = 'translateX(' + _transform + '%)';
+            
+            _sliderWrapper.style.transform = 'translateX(' + _transform + '%)';
         }
-
-        let timerId = setInterval(() => _transformItem('right'), 6000);
+        
+        let timerId = setInterval(() => _transformItem('right'), 6000);        
     }
 }());
 
 let slider = multiItemSlider('.slider');
+
+
+$('.menu__container').find('a').click(function(event) {
+    if($(this).attr("href")=="#"){
+        event.preventDefault();
+    }
+});
+
+$('#menu__cancel').click(function(event) {
+    $("#hover-menu").toggleClass('hover-menu');
+    $(this).toggleClass('menu__cancel--hidden');
+});
+
+$("#menu__container--little").click(function() {
+    $("#hover-menu").toggleClass('hover-menu');
+    $("#menu__cancel").toggleClass('menu__cancel--hidden');
+});

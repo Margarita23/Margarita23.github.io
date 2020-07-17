@@ -30,6 +30,7 @@
   },
   "dependencies": {
     "@babel/core": "^7.4.3",
+    "jquery": "^3.5.1",
     "normalize.css": "^8.0.1",
     "uglifyjs-webpack-plugin": "^2.1.2"
   },

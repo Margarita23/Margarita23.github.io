@@ -11,25 +11,71 @@ block content
                     .logo__image-container
                         img(src="../images/logo.png", alt="Логитип компании Colaees CLINIC").logo__image
                     p.logo__text клиника медицинской косметологии
-                .menu__container
+                .menu__container#hover-menu
+                    .menu__cancel.menu__cancel--hidden#menu__cancel
                     ul.menu__list
-                        li.menu__item О клинике
-                        li.menu__item Что мы лечим
-                        li.menu__item Услуги
+                        li.menu__item
+                            a(href="https://www.google.com.ua/").menu__link О клинике
+                        li.menu__item
+                            a(href="#").menu__link Что мы лечим
+                        li.menu__item.menu__item--submenu
+                            a(href="#").menu__link Услуги
                             .second-menu__container
-                                <svg xmlns="http://www.w3.org/2000/svg" width="30px" height="6px" viewBox="0 0 50 50" fill='#d7e9cd' class="menu__svg-triangle" preserveAspectRatio="none">
-                                    <polygon points="0,50 50,50 25,0"></polygon>
-                                </svg>
-                                ul.second-menu__list
+                                svg(xmlns="http://www.w3.org/2000/svg" width="30px" height="6px" viewBox="0 0 50 50" fill='#d7e9cd' class="menu__svg-triangle" preserveAspectRatio="none")
+                                    polygon(points="0,50 50,50 25,0")
+                                ul.second-menu__list#second-menu__list
+                                    li.second-menu__item
+                                        a(href="https://www.google.com.ua/?hl=ru").second-menu__link Дерматология
+                                    li.second-menu__item
+                                        a(href="#").second-menu__link Дерматоонкология
+                                        .shape-icon__container
+                                            svg(xmlns="http://www.w3.org/2000/svg" viewBox="0 0 10 16" fill="#a9ce9a" width="10" height="16")
+                                                path(id="Shape 26 copy 17" class="shp0" d="M1.78 14.16L1.27 13.65L7.24 7.69L1.12 1.57L1.63 1.07L8.25 7.69L1.78 14.16Z")
+                                        ul.third-menu__list#third-menu__list
+                                            li.third-menu__item 
+                                                a(href="https://www.google.com.ua/?hl=ru") Гемангиома лечение
+                                            li.third-menu__item
+                                                a(href="https://www.google.com.ua/?hl=ru") Лечение базалиом
+                                            li.third-menu__item
+                                                a(href="#") Диагностика меланом
+                                            li.third-menu__item
+                                                a(href="#") Лечение ксантелазм (ксантом)
+                                    li.second-menu__item
+                                        a(href="#").second-menu__link Медицинская Косметология
+                                        .shape-icon__container
+                                            svg(xmlns="http://www.w3.org/2000/svg" viewBox="0 0 10 16" fill="#a9ce9a" width="10" height="16")
+                                                path(id="Shape 26 copy 17" class="shp0" d="M1.78 14.16L1.27 13.65L7.24 7.69L1.12 1.57L1.63 1.07L8.25 7.69L1.78 14.16Z")
+                                        ul.third-menu__list
+                                            li.third-menu__item 
+                                                a(href="https://www.google.com.ua/") Губы
+                                            li.third-menu__item
+                                                a(href="https://www.google.com.ua/") Глаза
+                                            li.third-menu__item
+                                                a(href="#") Щеки
+                                            li.third-menu__item
+                                                a(href="#") Подбородок
+                                    li.second-menu__item
+                                        a(href="#").second-menu__link Венерология                  
+                                    li.second-menu__item
+                                        a(href="#").second-menu__link Трихология                          
+                                    li.second-menu__item
+                                        a(href="#").second-menu__link Онихология                         
+                                    li.second-menu__item
+                                        a(href="#").second-menu__link Урология
+                        li.menu__item.menu__item--submenu
+                            a(href="#").menu__link Цены на услуги
+                            .second-menu__container
+                                svg(xmlns="http://www.w3.org/2000/svg" width="30px" height="6px" viewBox="0 0 50 50" fill='#d7e9cd' class="menu__svg-triangle" preserveAspectRatio="none")
+                                    polygon(points="0,50 50,50 25,0")
+                                ul.second-menu__list#second-menu__list
                                     li.second-menu__item 
                                         a(href="#").second-menu__link Дерматология
                                     li.second-menu__item
                                         a(href="#").second-menu__link Дерматоонкология
                                         .shape-icon__container
-                                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 10 16" fill="#a9ce9a" width="10" height="16">
-                                                <path id="Shape 26 copy 17" class="shp0" d="M1.78 14.16L1.27 13.65L7.24 7.69L1.12 1.57L1.63 1.07L8.25 7.69L1.78 14.16Z" />
-                                            </svg>
-                                        ul.third-menu__list
+                                            svg(xmlns="http://www.w3.org/2000/svg" viewBox="0 0 10 16" fill="#a9ce9a" width="10" height="16")
+                                                path(id="Shape 26 copy 17" class="shp0" d="M1.78 14.16L1.27 13.65L7.24 7.69L1.12 1.57L1.63 1.07L8.25 7.69L1.78 14.16Z")
+                                        ul.third-menu__list#third-menu__list
                                             li.third-menu__item 
                                                 a(href="#") Гемангиома лечение
                                             li.third-menu__item
@@ -41,9 +87,8 @@ block content
                                     li.second-menu__item
                                         a(href="#").second-menu__link Медицинская Косметология
                                         .shape-icon__container
-                                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 10 16" fill="#a9ce9a" width="10" height="16">
-                                                <path id="Shape 26 copy 17" class="shp0" d="M1.78 14.16L1.27 13.65L7.24 7.69L1.12 1.57L1.63 1.07L8.25 7.69L1.78 14.16Z" />
-                                            </svg>
+                                            svg(xmlns="http://www.w3.org/2000/svg" viewBox="0 0 10 16" fill="#a9ce9a" width="10" height="16")
+                                                path(id="Shape 26 copy 17" class="shp0" d="M1.78 14.16L1.27 13.65L7.24 7.69L1.12 1.57L1.63 1.07L8.25 7.69L1.78 14.16Z")
                                         ul.third-menu__list
                                             li.third-menu__item 
                                                 a(href="#") Губы
@@ -61,10 +106,12 @@ block content
                                         a(href="#").second-menu__link Онихология                         
                                     li.second-menu__item
                                         a(href="#").second-menu__link Урология
-                        li.menu__item Цены на услуги
-                        li.menu__item Доктора
-                        li.menu__item Контакты
+                        li.menu__item
+                            a(href="#").menu__link Доктора
+                        li.menu__item
+                            a(href="#").menu__link Контакты
                 .contacts__container
+                    .menu__container--little#menu__container--little
                     p.contacts__text Свяжитесь с нами
                     a(href="tel:+380675800537").contacts__phone +380 67 580 05 37
             .banner__container
@@ -73,7 +120,7 @@ block content
                         .banner__visual
                             .main-phrase
                                 .main-phrase__container
-                                    h3.main-phrase__title Удалени папилом
+                                    h3.main-phrase__title Удаление папилом
                                     p.mane-phrase__desc оплати единоразово 7 процедур &#8212; получи скидку
                                     .discount 50%
                             .banner__image-container
@@ -82,7 +129,7 @@ block content
                         .banner__visual
                             .main-phrase
                                 .main-phrase__container
-                                    h3.main-phrase__title Удалени папилом
+                                    h3.main-phrase__title Удалениe папилом
                                     p.mane-phrase__desc оплати единоразово 7 процедур &#8212; получи скидку
                                     .discount 30%
                             .banner__image-container
@@ -91,11 +138,15 @@ block content
                         .banner__visual
                             .main-phrase
                                 .main-phrase__container
-                                    h3.main-phrase__title Удалени папилом
+                                    h3.main-phrase__title Удалениe папилом
                                     p.mane-phrase__desc оплати единоразово 7 процедур &#8212; получи скидку
                                     .discount 15%
                             .banner__image-container
                                 img(src="./images/girl.png" alt="Картинка-баннер").banner__image
+                ul.banner__list-control
+                    li.banner__item-control.banner__item-control--active
+                    li.banner__item-control
+                    li.banner__item-control
                 .banner__info
                     h3.info__title Здравствуйте, ищите профессиональный подход? 
                     .info__desc 

@@ -3,17 +3,57 @@
     justify-content: space-between;
     align-items: center;
     padding-top: 30px;
+    padding-bottom: 15px;
+}
+
+.contacts__container {
+    width: 16%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    padding: 10px 0px 0px 2%;
+}
+
+.menu__container {
+    width: 64%;
+    padding: 20px 5% 0px;
+}
+
+.menu__container--little {
+    display: none;
+    flex: 1;
+    position: absolute;
+    left: -30px;
+    width: 20px;
+    height: 20px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    background-image: url('../images/menu--little.svg');
+}
+
+.menu__link {
+    text-decoration: none;
+    color: black;
 }
 
 .logo {
-    width: 280px;
-    height: 80px;
+    width: 20%;
+    max-width: 280px;
+}
 
+.logo__image-container {
+    width: 100%;
+}
+
+.logo__image {
+    width: 100%;
 }
 
 .logo__text {
     margin: 0;
-    font-size: 11px;
+    font-size: 0.8rem;
     letter-spacing: 1px;
     color: #898989;
     font-family: $helvetica-ultraLight;
@@ -21,20 +61,24 @@
 }
 
 .contacts__text {
-    font-size: 14px;
+    font-size: 1rem;
     color: #363636;
     text-align: right;
+    width: 100%;
+    padding-top: 5px;
 }
 
 .contacts__phone {
-    font-size: 18px;
-    line-height: 24px;
+    padding-top: 5px;
+    font-size: 1.3rem; //18px
+    line-height: 1.7rem;
     color: #363636;
 }
 
 .menu__list {
     display: flex;
-    font-size: 14px;
+    justify-content: space-around;
+    font-size: 1rem;
     letter-spacing: 0px;
     color: #363636;
 }
@@ -64,16 +108,33 @@
     }
 }
 
+.menu__item--submenu {
+    position: relative;
+}
+
+.menu__item--submenu:after {
+    content: '';
+    display: block;
+    width: 10px;
+    height: 6px;
+    background-image: url('../images/main-sub-menu.svg');
+    background-size: 100% 100%;
+    background-position: center center;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 3px;
+    right: -12px;
+}
+
+
 .second-menu__list {
     display: none;
     flex-direction: column;
-    position: absolute;
     width: 250px;
-    padding: 16px 0px;
+    padding: 10px 0px;
     background-color: $lite-lime;
     z-index: 1;
     left: -20px;
-    margin-top: 13px;
 }
 
 
@@ -85,7 +146,7 @@
 
 .second-menu__item .second-menu__link {
     position: relative;
-    padding: 8px 0px 8px 20px;
+    padding: 8px 0px 4px 15px;
     text-decoration: none;
     color: black;
 }
@@ -113,7 +174,8 @@
 }
 
 .third-menu__item {
-    padding: 8px 20px;
+    font-size: 0.9rem;
+    padding: 8px 20px 6px 16px;
 
     &:hover a {
         padding-bottom: 2px;
@@ -135,13 +197,13 @@
 
 .menu__svg-triangle {
     display: none;
-    position: absolute;
-    bottom: 0;
-    left: 50%;
-    transform: translateX(-50%);
+    margin-left: 20px;
 }
 
 .second-menu__container {
-    position: relative;
-    height: 100%;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    margin-top: 6px;
+    left: -20px;
 }
