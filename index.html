@@ -4,6 +4,8 @@
     <meta charset="UTF-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick-theme.css"/>
     <link rel="stylesheet" href="../styles/main.min.css"/>
     <title>ColaeesClinic</title>
   </head>
@@ -110,8 +112,8 @@
           </div>
         </div>
         <div class="banner__container">
-          <ul class="banner__list" id="banner__list">
-            <li class="banner__item">
+          <div class="slick-carousel">
+            <div>
               <div class="banner__visual">
                 <div class="main-phrase">
                   <div class="main-phrase__container">
@@ -122,8 +124,8 @@
                 </div>
                 <div class="banner__image-container"><img class="banner__image" src="./images/girl.png" alt="Картинка-баннер"/></div>
               </div>
-            </li>
-            <li class="banner__item">
+            </div>
+            <div>
               <div class="banner__visual">
                 <div class="main-phrase">
                   <div class="main-phrase__container">
@@ -134,8 +136,8 @@
                 </div>
                 <div class="banner__image-container"><img class="banner__image" src="./images/girl.png" alt="Картинка-баннер"/></div>
               </div>
-            </li>
-            <li class="banner__item">
+            </div>
+            <div>
               <div class="banner__visual">
                 <div class="main-phrase">
                   <div class="main-phrase__container">
@@ -146,13 +148,8 @@
                 </div>
                 <div class="banner__image-container"><img class="banner__image" src="./images/girl.png" alt="Картинка-баннер"/></div>
               </div>
-            </li>
-          </ul>
-          <ul class="banner__list-control">
-            <li class="banner__item-control banner__item-control--active"></li>
-            <li class="banner__item-control"></li>
-            <li class="banner__item-control"></li>
-          </ul>
+            </div>
+          </div>
           <div class="banner__info">
             <h3 class="info__title">Здравствуйте, ищите профессиональный подход? </h3>
             <div class="info__desc"> 
@@ -165,5 +162,6 @@
       </div>
     </div>
     <script src="../js/bundle.js"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick.min.js"></script>
   </body>
 </html>
